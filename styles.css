@@ -1,59 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
-    margin:0;
-    padding:0;
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+}
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
-:root{
-    --background-principal: #00030c;
-    --cor-titulo: #FFF;
-    --cor-descricao:#c0c0c0;
-    --cor-subtitulo: #F9F9F9;
-    --cor-botao:#167BF7;
-    --fonte-principal: "Inter", sans-serif;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    background-color: var(--background-principal);
+.principal {
     background-image: url("assets/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
-}   
-
-
-.principal__observacoes{
-    color: var(--cor-descricao);
 }
 
-.conteudo__principal{
-    width: 588px;
-    height: 431px;
-    font-family: var(--fonte-principal);
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-.conteudo__principal h1{
-    color: var(--cor-titulo);
-    font-size: 28px;
-    margin-bottom: 22px;
-}
-
-.conteudo__principal a{
-    text-decoration: none;
-    border-radius: 8px;
-    width: 512px;
-    height: 56px;
-    padding: 16px;
-    font-size: 16px;
-    color: var(--cor-titulo);
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
     display: block;
+    text-decoration: none;
 }
 
-.botao__azul{
-    background-color: var(--cor-botao);
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
 }
 
-.botao__vazio{
-    background: none;
-    border: var(--cor-titulo);
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
 }

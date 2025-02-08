@@ -74,6 +74,10 @@ body {
     margin: 0 10em;
 }
 
+.container__descricao{
+    margin-right: 70px;
+}
+
 .container__descricao h2{
     font-family: var(--fonte-principal);
     font-weight: 600;
@@ -85,4 +89,14 @@ body {
     font-family: var(--fonte-principal);
     color: #F9F9F9;
     font-size: 16px;
+}
+
+.botao_terciario{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 1em;
 }
